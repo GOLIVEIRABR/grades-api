@@ -27,6 +27,7 @@ app.use(
     origin: 'http://localhost:8080',
   })
 );
+//teste
 
 app.get('/', (req, res) => {
   res.send('API em execucao');
