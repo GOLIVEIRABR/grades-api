@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'http://localhost',
+    origin: 'http://localhost:8080',
   })
 );
 
@@ -34,4 +34,4 @@ app.get('/', (req, res) => {
 
 app.use(gradeRouter);
 
-app.listen(process.env.PORT || 8081, () => {});
+app.listen(8081, () => {});
